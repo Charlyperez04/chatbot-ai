@@ -31,7 +31,6 @@ const FormGenerator = ({
 }: Props) => {
 switch(inputType){
     case "input":
-    default :
     return (
         <Label
             className='flex flex-col gap-2'
@@ -111,6 +110,7 @@ switch(inputType){
                 />
             </Label>
         )
+    default: return <></>
  }
 }
 
